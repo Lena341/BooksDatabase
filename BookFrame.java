@@ -30,7 +30,7 @@ public class BookFrame extends JFrame
      {
     	 try
     	 {
-    		 con=DriverManager.getConnection("jdbc:sqlserver://LAPTOP-B566P0U1:1433;integratedSecurity=true;");
+    		 con=DriverManager.getConnection("jdbc:sqlserver://localhost:1433;integratedSecurity=true;");
     		 Statement stmt=con.createStatement();
     		 sql="CREATE DATABASE Books";
     		 stmt.executeUpdate(sql);
